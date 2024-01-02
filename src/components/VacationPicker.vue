@@ -1,9 +1,12 @@
 <template>
-    <div class="container mx-auto px-4 list-group">
-        <h1>Pick your country you want to visit</h1>
+    
+    <div class="container mx-auto px-4">
+        <h1 class="text-xl font-black  justify-center flex">Pick your country you want to visit</h1>
             <div class="border-2 columns-2 bg-orange-200"
                 v-for="c in CountryData.countries" 
-                v-bind:key= "c.id">
+                v-bind:key= "c.id"
+                v-bind:title="c.details">
+                
                 Country: {{ c.name }} <br>
                 Capital: {{ c.capital }}<br>
                 Price: € {{ c.cost }}<br>
