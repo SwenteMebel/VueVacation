@@ -23,7 +23,7 @@
                         @click="selectCountry(index)">
                         {{ country.name }}<br>
                     </li>
-                    <li class="grid border-2 p-2 rounded-lg m-2 bg-rose-500 hover:bg-rose-200 font-semibold"
+                    <li class="grid border-2 p-2 rounded-lg m-2 bg-slate-400 hover:bg-rose-200 font-semibold"
                     v-for="(country, index) in newCountries" :key="index">
                     {{ country }}
                     
