@@ -10,8 +10,11 @@
             Brench: {{ car.merk }} <br>
             Type: {{ car.type }} <br>
             Price: € {{ car.prijs }} </p><br>
-
         </div>
+        <p>Kies een getal</p>
+        <select name="getallen" id="lijst1">
+            <option v-for="g in getallen" :key="g" :value="g">{{ g }}</option>
+        </select>
     </div>
 </template>
 
@@ -22,7 +25,8 @@ export default {
 name: 'CareList',
 data(){
     return {
-        CarsData
+        CarsData,
+        getallen: [10, 20, 30, 40, 50, 60, 70, 'Hallo dit is tekst']
     }
 }
 
