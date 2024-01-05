@@ -2,11 +2,12 @@ const countryData = {
     countries: [
         {
             id: 1,
-            name: 'Netherlands',
+            name: 'the Netherlands',
             capital: 'Amsterdam',
             cost: 750,
             details: 'Beautifull mills, with kind people and many to see and to do in the capital',
-            img: 'Amsterdam.jpg'
+            img: 'Amsterdam.jpg',
+            rating: 0
         }, 
         {
             id: 2,
@@ -14,7 +15,8 @@ const countryData = {
             capital: 'Washington',
             cost: 1250,
             details: 'One of the biggest countrys that excist',
-            img: 'Washington.jpg'
+            img: 'Washington.jpg',
+            rating: 0
         },
        {
             id: 3,
@@ -22,7 +24,8 @@ const countryData = {
             capital: 'Berlin',
             cost: 500,
             details: 'See the old Berlin wall from the second world war',
-            img: 'berlinWall.jpg'
+            img: 'berlinWall.jpg',
+            rating: 0
        },
        {
             id: 4,
@@ -30,7 +33,8 @@ const countryData = {
             capital: 'Paris',
             cost: 900,
             details: 'Come and visit the eiffel tower and the nice streets of Paris',
-            img: 'eiffelTower.jpg'
+            img: 'eiffelTower.jpg',
+            rating: 0
         }
     ]
 }
