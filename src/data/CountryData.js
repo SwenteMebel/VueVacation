@@ -8,7 +8,7 @@ const countryData = {
             details: 'Beautifull mills, with kind people and many to see and to do in the capital',
             img: 'Amsterdam.jpg',
             rating: 0
-        }, 
+        },
         {
             id: 2,
             name: 'Amerika',

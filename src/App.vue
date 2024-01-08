@@ -4,24 +4,19 @@
     <HelloWorld title="Vacation Picker" subtitle="Plan your next visit!"/>
   </div>
 
-  <VacationPicker />
+  <router-view />
  
   
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import VacationPicker from './components/VacationPicker.vue'
-
-
 
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    VacationPicker,
-    
   }
  
 }
