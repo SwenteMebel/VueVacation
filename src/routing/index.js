@@ -2,15 +2,40 @@ import { createRouter, createWebHistory} from 'vue-router'
 
 // De components importeren
 import VacationPicker from '@/components/VacationPicker.vue';
+import ShowDetails from '@/components/ShowDetails.vue';
+import AddCountry from '@/components/AddCountry.vue';
+import DeleteCountry from '@/components/DeleteCountry.vue';
 
 
 const routes = [
     // Hier komen alle routes
     {
-        path: '/',
-        name: 'home',
-        component: VacationPicker
-    }
+        path: '/', // van url 
+        name: 'home', // doel van de url 
+        component: VacationPicker // de component naam 
+    },
+    {
+        path: '/detail/:id/:name',
+        name: 'detail',
+        component: ShowDetails
+    },
+    {
+        path: '/add',
+        name: 'adding',
+        component: AddCountry
+    },
+    {
+        path: '/delete',
+        name: 'deleting',
+        component: DeleteCountry
+    },
+    {
+        path: '/update',
+        name: 'update/change',
+        component: () => import(/* webpackChunkName: "update" */'@/components/UpdateCounrty.vue')
+    },
+
+
 ]
 
 const router = createRouter({

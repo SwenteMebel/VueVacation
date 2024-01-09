@@ -1,22 +1,18 @@
 <template>
-  <div class="justify-start flex bg-blue-300 h-20 px-3">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld title="Vacation Picker" subtitle="Plan your next visit!"/>
-  </div>
+  <headerVue title="Vacation Picker" subtitle="Plan your next visit!"/>
 
   <router-view />
- 
-  
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import headerVue from './components/header.vue'
 
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    headerVue,
   }
  
 }

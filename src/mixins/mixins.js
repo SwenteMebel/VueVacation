@@ -15,9 +15,12 @@ export default {
          isOnSale(){
              return this.CountryData.countries[this.selectedCountryIndex].cost <= 500;
          },
+
          hide(){
             this.toggleHide = !this.toggleHide;
         },
+
+       
       
     }
 }

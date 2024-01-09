@@ -33,15 +33,18 @@ export default {
 
 
     methods: {
-        isExpensive(){
-        return this.country.cost >= 1000;
-        },
-        isOnSale(){
-            return this.country.cost <= 500;
-        },
+    
         // Als er op +1 of -1 button word gedrukt wordt dit verstuurd naar de parent file dmv this.$emit('waarde', value)
         setRating(value){
             this.$emit('rating', value);
+        },
+
+        isExpensive(){
+            return this.country.cost >= 1000;
+        },
+
+        isOnSale(){
+            return this.country.cost <= 500;
         },
     },
     // dmv emits: [waarde] stuur je het naar de parent file om daar verder verwerkt te worden.
