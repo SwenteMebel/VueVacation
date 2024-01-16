@@ -29,11 +29,7 @@ const routes = [
         name: 'deleting',
         component: DeleteCountry
     },
-    {
-        path: '/update',
-        name: 'update/change',
-        component: () => import(/* webpackChunkName: "update" */'@/components/UpdateCounrty.vue')
-    },
+ 
 
 
 ]

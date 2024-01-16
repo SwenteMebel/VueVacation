@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import './index.css'
-// import router dingen
-import router from '@/routing'
+// import router file
+import router from '@/routing/index'
 
 
 createApp(App)

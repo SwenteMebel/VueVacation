@@ -15,12 +15,12 @@
                 </ul>  
                 <button @click="remove(selectedCountryIndex)" class="bg-red-500 p-1 ml-2 rounded-lg font-semibold">Delete </button>
             </div> 
-             <!-- <collapsible-section>
-               Via @rating krijgen we data terug vanuit de child en dat word dan verder bewerkt als dat in deze component nodig is
-                 Via :country versturen data naar de child, en dan kan dat daar ook weer verwerkt worden mocht dit nodig zijn 
+            <collapsible-section>
+               <!--Via @rating krijgen we data terug vanuit de child en dat word dan verder bewerkt als dat in deze component nodig is
+             Via :country versturen data naar de child, en dan kan dat daar ook weer verwerkt worden mocht dit nodig zijn -->
                 
                 <CountryDetails v-if="selectedCountry" @rating="onRating($event)" :country="selectedCountry" />
-            </collapsible-section>-->
+            </collapsible-section>
         </div>    
     </div>
 </template>
@@ -28,8 +28,8 @@
 <script>
 import CountryData from '@/data/CountryData.js'
 import mixins from '@/mixins/mixins.js'
-//import CountryDetails from './CountryDetails.vue'
-//import CollapsibleSection from './CollapsibleSection.vue'
+import CountryDetails from './CountryDetails.vue'
+import CollapsibleSection from './CollapsibleSection.vue'
 
 
 export default {
@@ -37,8 +37,8 @@ export default {
    mixins: [mixins],
   
    components: {
-        //CountryDetails,
-        //CollapsibleSection,
+        CountryDetails,
+        CollapsibleSection,
    },
    
     data(){
