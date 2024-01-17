@@ -5,8 +5,9 @@
                 <h1 class="text-xl font-black  justify-center flex ">Pick your country you want to visit</h1>
                 <ul>   
                     <li class="grid border-2 p-2 rounded-lg m-2 bg-slate-400 hover:bg-rose-200 font-semibold grid-cols-2" 
-                    @click="ShowCountry(country)"    
-                    v-for="country in CountryData.countries" 
+                        
+                    v-for="country, index in CountryData.countries" 
+                        @click="selectCountry(index)"
                         v-bind:key= "country.id"
                         v-bind:title="country.details">
                         <div class="">{{ country.name }}</div>
@@ -59,21 +60,7 @@ export default {
         },  
         onRating(rating){
             this.CountryData.countries[this.selectedCountryIndex].rating += rating; 
-        },
-        // Met deze functie zet je het id en de naam van het land in de URL balk
-        ShowCountry(country){
-            console.log('er is op', country.name ,'gedrukt');
-            this.$router.push({
-                name:'detail',
-                params:{
-                    id:country.id,
-                    name: country.name,
-                   
-
-                } 
-            });
-        }
-       
+        }, 
     },
 
     computed: {

@@ -14,7 +14,7 @@
       <li class="md:mx-4 md:my-0 p-1 mx-2 text-xl hover:text-green-500"><router-link to="/">Home</router-link></li>
       <li class="md:mx-4 md:my-0 p-1 mx-2 text-xl hover:text-green-500"><router-link to="/add">Add Country</router-link></li>
       <li class="md:mx-4 md:my-0 p-1 mx-2 text-xl hover:text-green-500"><router-link to="/delete">Delete Country</router-link></li>
-      <li class="md:mx-4 md:my-0 p-1 mx-2 text-xl hover:text-green-500"><router-link to="/update">Update Country</router-link></li>
+      <li class="md:mx-4 md:my-0 p-1 mx-2 text-xl hover:text-green-500"><router-link to="/showall">Show Countries</router-link></li>
     </ul>
 
   </div>

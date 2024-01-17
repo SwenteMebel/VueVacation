@@ -29,6 +29,11 @@ const routes = [
         name: 'deleting',
         component: DeleteCountry
     },
+    {
+        path: '/showall',
+        name: 'showall',
+        component: () => import(/**/'@/components/Allcountries.vue')
+    },
  
 
 
