@@ -50,4 +50,11 @@ export default createStore ({
    
     },
 
+    getters: {
+        getCountry: (state) => (name) => {
+            return state.countries.find(c => c.name === name)
+        }
+        
+    }
+
 });

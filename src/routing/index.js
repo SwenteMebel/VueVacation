@@ -34,6 +34,11 @@ const routes = [
         name: 'showall',
         component: () => import(/**/'@/components/Allcountries.vue')
     },
+    {
+        path: '/detailselect/:name',
+        name: 'selectedfromall',
+        component: () => import(/**/ '@/components/Details.vue')
+    }
  
 
 
